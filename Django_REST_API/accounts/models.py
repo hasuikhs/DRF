@@ -20,7 +20,7 @@ class UserManager(BaseUserManager):
             profile = profile
         )
 
-        user.setpassword(request_data['password'])
+        user.set_password(request_data['password'])
         user.save(using=self._db)
         return user
 
@@ -51,7 +51,7 @@ class User(AbstractBaseUser):
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELD = ['username']
+    REQUIRED_FIELDS = ['username']
 
     def user_has_perm(user, perm, obj):
         return _user_has_perm(user, perm, obj)
