@@ -1,6 +1,17 @@
 # JWT-Authentication
 
+## JWT(JSON Web Token) 이란 ?
+
+- JSON Web Token은 웹표준으로서 두 개체에서 JSON 객체를 사용하여 가볍고 자가수용적인(self-contained) 방식으로 정보를 안전성 있게 전달해준다.
+- **수많은 프로그래밍 언어에서 지원**
+- JWT는 필요한 모든 정보를 자체적으로 지니고 있다. JWT에서 발급된 토큰은 토큰에 대한 기본정보, 전달 할 정보 그리고 토큰이 금증됐다는 것을 증명해주는 signature를 포함하고 있다.
+
+[JWT 더 자세한 정보](http://throughkim.kr/2017/03/14/Jwt/)
+
+[자세한 정보 2](https://tansfil.tistory.com/58)
+
 - `pip install list`
+  
     ```bash
     $ pip install django
     $ pip install djangorestframework
